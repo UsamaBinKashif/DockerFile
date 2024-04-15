@@ -1,0 +1,8 @@
+FROM node:latest
+
+COPY . /home/timezone
+
+WORKDIR /home/timezone/
+RUN npm install
+
+CMD ["node","index.js"]
